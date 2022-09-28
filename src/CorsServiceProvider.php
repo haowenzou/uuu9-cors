@@ -1,6 +1,6 @@
 <?php
 
-namespace U9\Cors\Middleware;
+namespace Uuu9\Cors\Middleware;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -26,7 +26,7 @@ class CorsServiceProvider extends ServiceProvider
                 $request->path(),
                 function() use ($request)
                 {
-                    $cors = app()->make('U9\Cors\Middleware\Cors');
+                    $cors = app()->make('Uuu9\Cors\Middleware\Cors');
                     return $cors->setOptionsHeaders($request, response('', 204));
                 }
             );

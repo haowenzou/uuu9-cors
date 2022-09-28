@@ -1,5 +1,5 @@
 <?php
-namespace U9\Cors\Middleware;
+namespace Uuu9\Cors\Middleware;
 
 use Closure;
 
@@ -9,7 +9,7 @@ class Cors
     protected $maxAge = 31536000; //一年
     protected $allowCredentials = true;
     protected $allowMethods = 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS';
-    protected $allowHeaders = 'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With, u9-Token, u9-Signature, Accept-ApiKey, Accept-ApiSign, Accept-ApiTime, Accept-Language, X-Request-Id';
+    protected $allowHeaders = 'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With, uuu9-Token, uuu9-Signature, Accept-ApiKey, Accept-ApiSign, Accept-ApiTime, Accept-Language, X-Request-Id';
     protected $exposeHeaders;
 
     protected function setOrigin($req, $rsp)
