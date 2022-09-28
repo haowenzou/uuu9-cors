@@ -9,7 +9,7 @@
 add:
 
 ```
-$app->register(U9\Cors\Middleware\CorsServiceProvider::class);
+$app->register(Uuu9\Cors\Middleware\CorsServiceProvider::class);
 ```
 
 and
@@ -17,7 +17,7 @@ and
 ```
 $app->routeMiddleware([
     ......
-    'cors' => U9\Cors\Middleware\Cors::class,
+    'cors' => Uuu9\Cors\Middleware\Cors::class,
 ]);
 ```
 
@@ -33,12 +33,12 @@ Only for `uuu9.cn` & `uuu9.com`
 ```
 
 $app->middleware([
-    'cors'=>U9\Cors\Middleware\Cors::class,
+    'cors'=>Uuu9\Cors\Middleware\Cors::class,
 
 ]);
 
 $app->routeMiddleware([
     ......
-    'cors' => U9\Cors\Middleware\Cors::class,
+    'cors' => Uuu9\Cors\Middleware\Cors::class,
 ]);
 ```
