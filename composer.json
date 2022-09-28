@@ -1,0 +1,16 @@
+{
+    "name": "uuu9/cors",
+    "description": "给响应增加 CORS Header",
+    "authors": [
+        {
+            "name": "zhw",
+            "email": "980334125@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+	      "Uuu9\\Cors\\Middleware\\": "src/"
+		}
+    },
+    "require": {}
+}
